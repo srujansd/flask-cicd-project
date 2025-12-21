@@ -13,7 +13,7 @@ def health():
     return "OK"
 
 @app.route('/test')
-def health():
+def test():
     return "It looks cool!"
 
 if __name__ == '__main__':
