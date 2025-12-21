@@ -53,7 +53,7 @@ docker run -p 5000:5000 flask-app
 
 ### Step 1: Create EC2 Instance
 
-- AMI: Amazon Linux 2023
+- AMI: Ubuntu
 - Type: t2.micro
 - Security Group: Allow SSH (22) + HTTP (80)
 
@@ -62,8 +62,8 @@ docker run -p 5000:5000 flask-app
 ```bash
 ssh -i your-key.pem ec2-user@your-ec2-ip
 
-sudo yum update -y
-sudo yum install -y docker
+sudo apt update -y
+sudo curl https://get.docker.com | bash
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker ec2-user
@@ -96,6 +96,4 @@ git push origin main
 
 ## Links
 
-- [Flask Docs](https://flask.palletsprojects.com/)
-- [Docker Docs](https://docs.docker.com/)
 - [GitHub Actions Docs](https://docs.github.com/en/actions)
