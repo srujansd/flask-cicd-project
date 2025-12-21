@@ -79,7 +79,7 @@ Go to: Repository → Settings → Secrets → Actions
 | `DOCKER_USERNAME` | Your Docker Hub username |
 | `DOCKER_PASSWORD` | Your Docker Hub token |
 | `EC2_HOST` | Your EC2 public IP |
-| `EC2_USERNAME` | ec2-user |
+| `EC2_USERNAME` | ubuntu |
 | `EC2_SSH_KEY` | Contents of your .pem file |
 
 ### Step 4: Push and Deploy
