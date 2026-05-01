@@ -16,5 +16,9 @@ def health():
 def test():
     return "It looks cool!!"
 
+@app.route('/srujan')
+def test():
+    return "Hello srujan!!"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
